@@ -1,1 +1,28 @@
 # Data Structure
+
+### What is the Data Structure ?
+- The Data Structure is a systematic way to organize the data so that it can be used effiently.
+
+### Abstract Data Type (ADT)
+- A data type where you only define what operation can be done. Not how they are done internally. like ATM Machine.
+- ADT has 2 parts one is Data and other one is operation
+- Implement ADT using array and structure.
+- ADT tells us what is to be done and data structure tells how to do it.
+
+### Types Of Data Structure
+1. Linear Data Structure
+2. Non Linear Data Structure
+3. Static Data Structure
+4. Dynamic Data Structure
+
+### Time Complexity
+- We would be able to know which operation on which data structure will take less time.
+
+### Linked List Type
+1. Single Linked List
+2. Doubly Linked List
+3. Circular Linked List
+
+### 1. Single Linked List
+- That made of node that consist of two parts which is data and link
+- Data is an actual data and link is a address of the nwxt node which is linked to the linklist.

@@ -26,3 +26,10 @@
 ### 1. Single Linked List
 - That made of node that consist of two parts which is data and link
 - Data is an actual data and link is a address of the nwxt node which is linked to the linklist.
+``` base
+[ Data | Link1 ] --> [ Data | Link2 ]
+```
+
+#### Traversing a single Linked List:
+- Travesing a single linked list means visiting each node of a single linked list untill the end node is reached.
+- Our job is to calculate the total number of nodes by traversing the linked list.

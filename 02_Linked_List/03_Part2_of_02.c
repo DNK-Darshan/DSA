@@ -9,12 +9,12 @@ struct node
 
 int main()
 {
-    struct node *head;
+    struct node *head = NULL;
     head = (struct node *)malloc(sizeof(struct node));
     head->data = 14;
     head->next = NULL;
 
-    struct node *second;
+    struct node *second = NULL;
     second = (struct node *)malloc(sizeof(struct node));
     second->data = 28;
     second->next = NULL;

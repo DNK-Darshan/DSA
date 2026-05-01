@@ -33,3 +33,9 @@
 #### Traversing a single Linked List:
 - Travesing a single linked list means visiting each node of a single linked list untill the end node is reached.
 - Our job is to calculate the total number of nodes by traversing the linked list.
+
+### 2. Doubly Linked List
+- They each node has an extra pointer that points to the previous node, together with the next pointer and data similar to the singly linked list.
+``` base
+[ Prev | Data | Next ] --> <-- [ Prev | Data | Next ]
+```

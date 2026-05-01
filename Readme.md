@@ -39,3 +39,9 @@
 ``` base
 [ Prev | Data | Next ] --> <-- [ Prev | Data | Next ]
 ```
+
+#### Why used the Doubly Linked List ?
+- Deletion operation is faster in doubly linked list, If the pointer to the node is given.
+- Inserting a new node before a given node is easier in doubly linked list.
+- Bidirectional Traversal.
+- Reversal is easy compare to the singly linked list.

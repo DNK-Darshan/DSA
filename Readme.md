@@ -45,3 +45,14 @@
 - Inserting a new node before a given node is easier in doubly linked list.
 - Bidirectional Traversal.
 - Reversal is easy compare to the singly linked list.
+
+### 3. Circular Linked List
+- There are a two types of circular linked list available.
+    - A. Circular Singly Linked List
+    - B. Circular Doubly Linked List
+
+- Circular Singly Linked List
+    - Circular linked list is similar to the singly linked list except that the last node of the circular singly linked list points to the first node.
+
+- Circular Doubly Linked List
+    - Circular doubly linked list is similar to the doubly linked list except that the last node of the circular doubly linked list points to the first node and the first node of the circular doubly linked list points to the last node.

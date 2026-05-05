@@ -66,6 +66,31 @@
 
 - Heat 5 is coefficient and 3 is exponent.
 - Below has a representation of this type of polynimial in linked list
-- [5 | 3 | next] --> [-3 | 2 | next] --> [2 | 1 | next] --> [1 | 0 | next]
+- [ 5 | 3 | next ] --> [ -3 | 2 | next ] --> [ 2 | 1 | next ] --> [ 1 | 0 | next ]
 ```
 - So for representing the polynomial expression, we will use a sorted linked list which would be in descending order based on the exponents.
+
+### Definition of stack 
+- A stack is a linear data structure in which insertions and deletions are allowed only at the end, called the top of the stack.
+
+### Stack as an ADT
+- When we define a stack as an ADT then we are only interested in knowing the stack operations from the user point of view.
+- Means we are not interested in knowing the implementation details at this moment. We are only interested in knowing what type of operation we can perform on stack.
+
+### Primary Stack Operation
+- push():
+    - Insert data into the stack.
+- pop():
+    - Delete the last inserted element from the stack.
+- top():
+    - Returns the last inserted element without removing it.
+
+### Secondary Stack Operation
+- top():
+    - Returns the last inserted element without removing it.
+- size():
+    - Returns the size or the number of elements in the stack.
+- isEmpty():
+    - Returns TRUE if the stack is empty, else returns FALSE.
+- isFull():
+    - Returns TRUE if the stack is full, else returns FALSE.

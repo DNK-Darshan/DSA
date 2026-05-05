@@ -56,3 +56,16 @@
 
 - Circular Doubly Linked List
     - Circular doubly linked list is similar to the doubly linked list except that the last node of the circular doubly linked list points to the first node and the first node of the circular doubly linked list points to the last node.
+
+### What is Polynomial ?
+- The word polynomial comes from poly ( Which means many ) and nomial ( Which means terms ).
+- So polynomial is an expression with many terms.
+- Each terms of a polynomial has a coefficient and an exponent.
+```
+5x³ - 3x² + 2x + 1
+
+- Heat 5 is coefficient and 3 is exponent.
+- Below has a representation of this type of polynimial in linked list
+- [5 | 3 | next] --> [-3 | 2 | next] --> [2 | 1 | next] --> [1 | 0 | next]
+```
+- So for representing the polynomial expression, we will use a sorted linked list which would be in descending order based on the exponents.

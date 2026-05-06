@@ -82,6 +82,7 @@
     - Insert data into the stack.
 - pop():
     - Delete the last inserted element from the stack.
+    - pop also return the value of the deleted element.
 - top():
     - Returns the last inserted element without removing it.
 
@@ -94,3 +95,6 @@
     - Returns TRUE if the stack is empty, else returns FALSE.
 - isFull():
     - Returns TRUE if the stack is full, else returns FALSE.
+
+### Why linked list representation is required in stack ?
+- Used linked list when the size of the stack is not known in advanced

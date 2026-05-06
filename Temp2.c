@@ -1,63 +1,74 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct node {
-    int data;
-    struct node *next;
-} data_node;
+#define SIZE 5
 
-void *add_at_end(data_node *head, int data) {
-    data_node *temp = NULL;
-    temp = (data_node *)malloc(sizeof(data_node));
-    temp->data = data;
-    temp->next = NULL;
+int stack[SIZE];
+int top = -1;
 
-    while(head->next != NULL) {
-        head = head->next;
+// Push function
+void push(int value) {
+    if (top == SIZE - 1) {
+        printf("Stack Overflow\n");
+        return;
     }
-    head->next = temp;
+
+    top++;
+    stack[top] = value;
+    printf("%d pushed into stack\n", value);
 }
 
-void *add_at_center(data_node *head, int data, int pos) {
-    data_node *ptr = head;
-    data_node *temp = NULL;
-    temp = (data_node *)malloc(sizeof(data_node));
-    temp->data = data;
-    temp->next = NULL;
-
-    pos--;
-    while(pos != 0) {
-        ptr = ptr->next;
-        pos--;
+// Pop function
+void pop() {
+    if (top == -1) {
+        printf("Stack Underfl1ow\n");
+        return;
     }
 
-    temp->next = ptr->next;
-    ptr->next = temp;
+    printf("%d popped from stack\n", stack[top]);
+    top--;
 }
 
-int main()
-{
-    data_node *head = NULL;
-    head = (data_node *)malloc(sizeof(data_node));
-    head->data = 10;
-    head->next = NULL;
-
-    add_at_end(head, 20);
-    add_at_end(head, 30);
-    add_at_end(head, 40);
-    add_at_end(head, 50);
-    add_at_end(head, 60);
-    add_at_end(head, 70);
-
-    int data = 14, pos = 4;
-    add_at_center(head, data, pos);
-
-    data_node *ptr = head;
-
-    while(ptr != NULL) {
-        printf(" %d", ptr->data);
-        ptr = ptr->next;
+// Peek function
+void peek() {
+    if (top == -1) {
+        printf("Stack is empty\n");
+        return;
     }
+
+    printf("Top element is: %d\n", stack[top]);
+}
+
+// Display stack
+void display() {
+    if (top == -1) {
+        printf("Stack is empty\n");
+        return;
+    }
+
+    printf("Stack elements: ");
+    for (int i = top; i >= 0; i--) {
+        printf("%d ", stack[i]);
+    }
+    printf("\n");
+}
+
+// Main function
+int main() {
+    push(10);
+    push(20);
+    push(30);
+
+    display();
+
+    peek();
+
+    pop();
+    display();
+
+    pop();
+    pop();
+    pop();  // Underflow case
 
     return 0;
 }

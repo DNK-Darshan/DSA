@@ -98,3 +98,21 @@
 
 ### Why linked list representation is required in stack ?
 - Used linked list when the size of the stack is not known in advanced
+
+
+### What the meaning of infix expression ?
+- 3 + 5 * 7 - 4 ^ 2
+- This type of expression is known as a infix expression because of operator in between two operands like + is in between 3 or 5 or * is in between 5 or 7.
+
+### What about the operator with same priority ? 
+- If expression like 3 + 5 - 2 so + and - both has a same priority so expression is evaluate with the left tp right approch
+- This means whichever operators comes first will be evaluated first.
+
+### What is a postfix notation ?
+- Notation: AB+
+- The operators are written after their operands.
+- Example ABC /+
+- The order of evaluation of operators is left to right with no brackets in the expression to change the order.
+- In the example, division comes before addition, and therefore, the division must be performed before addition.
+- The golden rule of the thumb to evaluate the postfix expression 
+    - The experssion will be scanned from left to right and as soon as we will encounter an operator, we will apply it to the last two operands.

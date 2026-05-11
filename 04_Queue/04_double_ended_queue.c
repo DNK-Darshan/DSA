@@ -19,12 +19,10 @@ void insertFront(int value) {
     newNode->prev = NULL;
     newNode->next = NULL;
 
-    if(front == NULL)
-    {
+    if(front == NULL) {
         front = rear = newNode;
     }
-    else
-    {
+    else {
         newNode->next = front;
         front->prev = newNode;
         front = newNode;
@@ -42,12 +40,10 @@ void insertRear(int value) {
     newNode->prev = NULL;
     newNode->next = NULL;
 
-    if(rear == NULL)
-    {
+    if(rear == NULL) {
         front = rear = newNode;
     }
-    else
-    {
+    else {
         rear->next = newNode;
         newNode->prev = rear;
         rear = newNode;
@@ -59,8 +55,7 @@ void insertRear(int value) {
 void deleteFront() {
     struct node *temp;
 
-    if(front == NULL)
-    {
+    if(front == NULL) {
         printf("Deque is empty\n");
         return;
     }
@@ -71,12 +66,10 @@ void deleteFront() {
 
     front = front->next;
 
-    if(front != NULL)
-    {
+    if(front != NULL) {
         front->prev = NULL;
     }
-    else
-    {
+    else {
         rear = NULL;
     }
 
@@ -86,8 +79,7 @@ void deleteFront() {
 void deleteRear() {
     struct node *temp;
 
-    if(rear == NULL)
-    {
+    if(rear == NULL) {
         printf("Deque is empty\n");
         return;
     }
@@ -98,8 +90,7 @@ void deleteRear() {
 
     rear = rear->prev;
 
-    if(rear != NULL)
-    {
+    if(rear != NULL) {
         rear->next = NULL;
     }
     else
@@ -113,8 +104,7 @@ void deleteRear() {
 void display() {
     struct node *temp;
 
-    if(front == NULL)
-    {
+    if(front == NULL) {
         printf("Deque is empty\n");
         return;
     }
@@ -123,8 +113,7 @@ void display() {
 
     printf("Deque elements are:\n");
 
-    while(temp != NULL)
-    {
+    while(temp != NULL) {
         printf("%d ", temp->data);
         temp = temp->next;
     }
